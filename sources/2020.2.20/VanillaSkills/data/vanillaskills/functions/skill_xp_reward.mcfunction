@@ -15,24 +15,39 @@ clear @a[nbt={Inventory:[{tag:{ExpBook:"Battle"}}]}] enchanted_book{ExpBook:"Bat
 scoreboard players add @a[scores={vsMineStone=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningXp 1
 scoreboard players add @a[scores={vsMineStone=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningTel 1
 scoreboard players remove @a[scores={vsMineStone=1..}] vsMineStone 1
+
+scoreboard players add @a[scores={vsMineIron=1..}] vsMiningXp 15
+scoreboard players add @a[scores={vsMineIron=1..}] vsMiningTel 1
+scoreboard players remove @a[scores={vsMineIron=1..}] vsMineIron 1
+
+scoreboard players add @a[scores={vsMineGold=1..}] vsMiningXp 75
+scoreboard players add @a[scores={vsMineGold=1..}] vsMiningTel 1
+scoreboard players remove @a[scores={vsMineGold=1..}] vsMineGold 1
+
 scoreboard players add @a[scores={vsMineRst=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningXp 40
 scoreboard players add @a[scores={vsMineRst=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningTel 1
 scoreboard players remove @a[scores={vsMineRst=1..}] vsMineRst 1
+
 scoreboard players add @a[scores={vsMineCoal=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningXp 5
 scoreboard players add @a[scores={vsMineCoal=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningTel 1
 scoreboard players remove @a[scores={vsMineCoal=1..}] vsMineCoal 1
+
 scoreboard players add @a[scores={vsMineLapis=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningXp 20
 scoreboard players add @a[scores={vsMineLapis=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningTel 1
 scoreboard players remove @a[scores={vsMineLapis=1..}] vsMineLapis 1
+
 scoreboard players add @a[scores={vsMineEme=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningXp 100
 scoreboard players add @a[scores={vsMineEme=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningTel 1
 scoreboard players remove @a[scores={vsMineEme=1..}] vsMineEme 1
+
 scoreboard players add @a[scores={vsMineDia=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningXp 100
 scoreboard players add @a[scores={vsMineDia=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningTel 1
 scoreboard players remove @a[scores={vsMineDia=1..}] vsMineDia 1
+
 scoreboard players add @a[scores={vsMineQtz=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningXp 15
 scoreboard players add @a[scores={vsMineQtz=1..},nbt=!{SelectedItem:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}}] vsMiningTel 1
 scoreboard players remove @a[scores={vsMineQtz=1..}] vsMineQtz 1
+
 scoreboard players add @a[nbt={Inventory:[{tag:{ExpBook:"Mining"}}]}] vsMiningXp 50
 execute as @a[nbt={Inventory:[{tag:{ExpBook:"Mining"}}]}] at @s run playsound entity.experience_orb.pickup ambient @s
 scoreboard players add @a[nbt={Inventory:[{tag:{ExpBook:"Mining"}}]}] vsMiningTel 1

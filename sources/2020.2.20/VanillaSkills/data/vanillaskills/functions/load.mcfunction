@@ -22,7 +22,10 @@ scoreboard objectives add vsBattleCl dummy
 scoreboard objectives add vsMiningCl dummy
 scoreboard objectives add vsMagicCl dummy
 
+#铁和金只有在熔炉烧炼之后才会加经验
 scoreboard objectives add vsMineStone minecraft.mined:minecraft.stone
+scoreboard objectives add vsMineIron minecraft.crafted:minecraft.iron_ore
+scoreboard objectives add vsMineGold minecraft.crafted:minecraft.gold_ore
 scoreboard objectives add vsMineRst minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add vsMineCoal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add vsMineLapis minecraft.mined:minecraft.lapis_ore
